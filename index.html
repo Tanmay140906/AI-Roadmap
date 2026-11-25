@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Engineering Checklist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>AI Engineering Checklist</h1>
+    <div id="overall"></div>
+  </div>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Search concepts" aria-label="Search concepts">
+    <div class="seg" id="filters" role="group" aria-label="Priority filter">
+      <button data-f="A">All</button><button data-f="M">Must</button><button data-f="S">Should</button><button data-f="N">Nice</button>
+    </div>
+    <label class="chk"><input type="checkbox" id="hide"> Hide done</label>
+    <span class="spacer"></span>
+    <button id="exp">Export</button>
+    <button id="imp">Import</button>
+    <button id="rst" class="danger">Reset</button>
+    <input type="file" id="file" accept="application/json" hidden>
+  </div>
+</header>
+<div class="layout">
+  <nav id="nav" aria-label="Sections"></nav>
+  <main id="main"></main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
